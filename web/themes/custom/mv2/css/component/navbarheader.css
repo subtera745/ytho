@@ -1,0 +1,105 @@
+
+
+.layout-container > header > div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#block-mv2-branding a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+#block-mv2-mainnavigation ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	/*max-width: 10em;*/
+	/*padding: 1em;*/
+}
+
+#block-mv2-mainnavigation ul li {
+	margin: 1em;
+	padding: 1em;
+	text-decoration: none;
+	list-style: none;
+	flex-grow: 1;
+}
+
+#block-mv2-mainnavigation ul li a{
+	text-decoration: none;
+	color:#999;
+	font-family: 'Oswald', sans-serif;
+/*
+https://fonts.google.com/specimen/Oswald?selection.family=Oswald
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+</style>*/
+	padding: 0.5em;
+}
+
+#block-mv2-mainnavigation ul li a:link {
+	color:#999;
+}
+
+#block-mv2-mainnavigation ul li a:visited {
+	color:#999;
+}
+
+
+#block-mv2-mainnavigation ul li a:hover {
+	color: black;
+}
+
+#block-mv2-mainnavigation ul li a::active {
+	color: black;
+}
+
+
+.navgal a.navgal,
+.navab a.navab {
+	color: black;
+}
+
+@media(max-width:62.500em ) {
+	
+	.layout-container > header > div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}	
+
+
+#block-mv2-branding {
+	margin: 2em;
+	padding: .5em;
+}
+
+#block-mv2-mainnavigation ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 0;
+	max-width: 15.625em;
+
+}
+
+#block-mv2-mainnavigation ul li{
+	margin: .25em;
+	padding: .25em;
+}
+
+
+}

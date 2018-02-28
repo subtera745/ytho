@@ -24,8 +24,6 @@ services:
     container_name: db
     mem_limit: 512M
     env_file: environment
-    ports:
-      - 3306:3306
     volumes:
       - ./docker-src/db/conf:/etc/mysql/conf.d
       - database:/var/lib/mysql
@@ -38,8 +36,6 @@ services:
     mem_limit: 128M
     environment:
       - MEMCACHED_SERVER=memcached:11211
-    ports:
-      - 11211:11211
     networks:
       - connector
 

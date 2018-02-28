@@ -1,0 +1,17 @@
+uuid: 0102cc97-9aa5-4abb-9007-7925a76cafeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Gallery
+type: gallery
+description: 'This type of content is for the artwork that will be displayed.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

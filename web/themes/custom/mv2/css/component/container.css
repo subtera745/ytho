@@ -1,0 +1,15 @@
+.layout-container {
+	max-width: 75em;
+	align-self: center;
+}
+
+.dialog-off-canvas__main-canvas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+}
+
+body {
+	zoom:1;
+}

@@ -1,0 +1,20 @@
+uuid: 8286239c-e299-4fcc-8f4d-fb8ca4ca8baa
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mv2
+id: mv2_help
+theme: mv2
+region: header
+weight: -1
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,16 @@
+global-js:
+  js:
+    js/main.js: {}
+
+global-styling:
+
+    global-styling:
+    css:
+       theme:
+          css/normalize.css: {}
+          css/style.css: {}
+          css/component/navbarheader.css: {}
+          css/component/gallery.css: {}
+          css/component/about.css: {}
+          css/component/container.css: {}
+         

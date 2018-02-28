@@ -1,0 +1,33 @@
+.about .views-row {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+@media(max-width: 62.500em) {
+
+
+.about .views-row {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.about .views-row .views-field-field-headshot .field-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.about .views-row .views-field-body .field-content p{
+	max-width: 100%;
+	height: auto;
+	padding: 1em;
+}
+
+}

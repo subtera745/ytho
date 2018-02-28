@@ -1,0 +1,22 @@
+uuid: 52a890e2-5e54-4380-9fa5-76e920228f37
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mv2
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: mv2_messages
+theme: mv2
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

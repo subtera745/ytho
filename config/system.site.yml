@@ -1,0 +1,14 @@
+uuid: a04f6d9d-6d67-4570-994d-e5c5b8708f37
+name: MIKESGARBAGEART
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /gallery
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

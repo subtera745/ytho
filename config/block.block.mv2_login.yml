@@ -1,0 +1,22 @@
+uuid: 1c97aed0-1057-4840-ab71-c40da4f9e844
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - mv2
+_core:
+  default_config_hash: 4QlSnWBcxxKMIFRM8sbu_MjSkcp3NjGgnVrc-lynQHI
+id: mv2_login
+theme: mv2
+region: header
+weight: 1
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

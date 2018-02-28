@@ -1,0 +1,14 @@
+name: style
+Description: Custom theme without bootstrap
+version: 0.1
+type: theme
+core: 8.x
+package: custom
+
+libraries:
+ - style/global-styling
+
+regions:
+    header: Header
+    content: Content
+    footer: Footer

@@ -1,0 +1,26 @@
+.lightgallery {
+	padding: 0;
+}
+
+.light .lightgallery-wrapper ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.light .lightgallery-wrapper ul li {
+	margin:1em;
+	padding: 1em;
+}
+
+@media(max-width: 62.500em){
+	.light .lightgallery-wrapper ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+}

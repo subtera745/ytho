@@ -1,0 +1,14 @@
+name: mv2
+Description: Custom theme without bootstrap mark2
+version: 1.0
+type: theme
+core: 8.x
+package: custom
+
+libraries:
+ - mv2/global-styling
+
+regions:
+    header: Header
+    content: Content
+    footer: Footer

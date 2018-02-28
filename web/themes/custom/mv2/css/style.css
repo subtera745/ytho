@@ -1,0 +1,16 @@
+/*
+
+//lightgallery styling
+@import 'component/gallery.css';
+
+/*//*
+
+navbar styling
+@import 'component/navbarheader.css';
+
+/*main page styling*/ /*
+@import 'component/mainpage.css'
+
+# unless I import sass again, this entire page is bullshit and literally only serves the purpose of importing a text font type.
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');

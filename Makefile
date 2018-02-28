@@ -129,6 +129,8 @@ fix-permissions:
 	sudo chmod -R u=rwx,g=rwxs,o=rwx ./web/sites/default/files;
 
 # This command will open a shell in the specified container as root
-# usage: make shell cn=<container name>
+# usage: make shell cn=<container name> 
+#make shell cn=cms once a docker instance is running.
 shell:
 	docker exec -it --user root ${cn} /bin/bash
+
