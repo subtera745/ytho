@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_art
+    - image.style.lightimg
     - image.style.medium
     - node.type.gallery
   module:
@@ -221,7 +222,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: lightimg
             image_link: ''
           group_column: ''
           group_columns: {  }

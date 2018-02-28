@@ -70,6 +70,16 @@ https://fonts.google.com/specimen/Oswald?selection.family=Oswald
 	color: black;
 }
 
+#block-mv2-mainnavigation .contextual-links li {
+	padding: 0;
+	margin: 0;
+
+}
+
+#block-mv2-mainnavigation .contextual-links {
+	display: none;
+}
+
 @media(max-width:62.500em ) {
 	
 	.layout-container > header > div {
@@ -101,5 +111,13 @@ https://fonts.google.com/specimen/Oswald?selection.family=Oswald
 	padding: .25em;
 }
 
+#block-mv2-mainnavigation .contextual-links li {
+	padding: 0;
+	margin: 0;
+}
+
+#block-mv2-mainnavigation .contextual-links {
+	display: none;
+}
 
 }

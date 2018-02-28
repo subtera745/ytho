@@ -1,0 +1,15 @@
+uuid: 0f6784cc-31f7-476d-a85a-da025a07c2e2
+langcode: en
+status: true
+dependencies: {  }
+name: lightimg
+label: LightImg
+effects:
+  c145e3ce-3e2a-43f3-8128-5ae2d38d96c2:
+    uuid: c145e3ce-3e2a-43f3-8128-5ae2d38d96c2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
