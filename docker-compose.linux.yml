@@ -3,11 +3,7 @@ services:
   cms:
     build:
       context: ./docker-src/cms
-    container_name: cms
     mem_limit: 512M
-    ports:
-      - 8080:80
-      - 8443:443
     volumes:
       - .:/var/www
     env_file: environment
@@ -21,7 +17,6 @@ services:
 
   db:
     image: mariadb:latest
-    container_name: db
     mem_limit: 512M
     env_file: environment
     volumes:
@@ -32,7 +27,6 @@ services:
 
   memcache:
     image: memcached:latest
-    container_name: memcached
     mem_limit: 128M
     environment:
       - MEMCACHED_SERVER=memcached:11211

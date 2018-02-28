@@ -1,0 +1,11 @@
+version: '2'
+services:
+  cms:
+    container_name: cms
+    ports:
+      - 8080:80
+      - 8443:443
+  db:
+    container_name: db
+  memcache:
+    container_name: memcached

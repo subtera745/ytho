@@ -1,6 +1,8 @@
 # Grab environment information (OSX vs Linux)
 UNAME := $(shell uname)
 DOCKER_COMPOSE_FILE := docker-compose.yml
+DOCKER_COMPOSE_PROD_FILE := docker-compose.prod.overrides.yml
+DOCKER_COMPOSE_DEV_FILE := docker-compose.dev.overrides.yml
 ifeq ($(UNAME), Linux)
 	DOCKER_COMPOSE_FILE := docker-compose.linux.yml
 endif
@@ -24,7 +26,7 @@ update: docker-stop composer-install docker-rebuild ready config-import clear-ca
 safe-update: docker-stop composer-install docker-rebuild ready clear-cache
 
 docker-rebuild:
-	docker-compose -f ${DOCKER_COMPOSE_FILE} up -d --build
+	docker-compose -f ${DOCKER_COMPOSE_FILE} -f ${DOCKER_COMPOSE_DEV_FILE} up -d --build
 	docker-compose -f ${DOCKER_COMPOSE_FILE} ps
 	@sleep 10
 
@@ -32,7 +34,12 @@ docker-status:
 	docker-compose -f ${DOCKER_COMPOSE_FILE} ps
 
 docker-start:
-	docker-compose -f ${DOCKER_COMPOSE_FILE} up -d
+	docker-compose -f ${DOCKER_COMPOSE_FILE} -f ${DOCKER_COMPOSE_DEV_FILE} up -d
+	docker-compose -f ${DOCKER_COMPOSE_FILE} ps
+	@sleep 10
+
+docker-start-production:
+	docker-compose -f ${DOCKER_COMPOSE_FILE} -f ${DOCKER_COMPOSE_PROD_FILE} up -d
 	docker-compose -f ${DOCKER_COMPOSE_FILE} ps
 	@sleep 10
 
