@@ -1,0 +1,28 @@
+body {
+	/*width: 75em;*/
+	background-color: #825A37;
+}
+
+
+.babymonk .views-row .views-field-field-y .field-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+ .babymonk .views-row .views-field-field-y .field-content img {
+ 	flex-grow: 1;
+ 	align-self: center;
+ }
+
+
+ .babymonk .views-row .views-field-field-y .field-content img {
+ 	max-width:100%;
+ 	height: auto;
+ 	margin: 0%;
+ }

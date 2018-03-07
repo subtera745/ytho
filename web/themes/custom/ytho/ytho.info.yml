@@ -1,0 +1,12 @@
+name: ytho
+Description: ytho
+version: 1.0
+type: theme
+core: 8.x
+package: custom
+
+libraries:
+ - ytho/global-styling
+
+regions:
+    content: Content

@@ -1,0 +1,12 @@
+global-js:
+  js:
+    js/main.js: {}
+
+global-styling:
+
+    global-styling:
+    css:
+       theme:
+          css/normalize.css: {}
+          css/style.css: {}
+         
